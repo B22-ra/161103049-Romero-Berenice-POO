@@ -12,9 +12,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Este formulario imprime numeros.</h1>
+        <h1>Este formulario imprime una lista de numeros.</h1>
         <form> 
-            <input type="number" name="numero" min="0"/><br>
+            Ingresa un numero entero: <input type="number" name="numero" min="0"/><br>
             <input type="submit" value="Enviar" /><br><br>
             
         </form>
