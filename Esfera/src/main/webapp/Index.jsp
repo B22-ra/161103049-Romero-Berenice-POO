@@ -19,10 +19,10 @@
         <h1>El volumen de la esfera es: </h1><br>
         <%
             int radio = Integer.parseInt(request.getParameter("radio"));
-            out.println((4.0/3)* Math.PI * Math.pow(radio, 3));
-            %>
-            <input type="hidden" name="numero"/><br>
-            <input type="submit" value="Regresar" /><br><br>
+            out.println((4.0 / 3) * Math.PI * Math.pow(radio, 3));
+        %>
+        <input type="hidden" name="numero"/><br>
+        <input type="submit" value="Regresar" /><br><br>
         <%} else {%>
         <form> 
             Ingresa el volumen de la esfera: <input type="number" name="radio" required/><br>
