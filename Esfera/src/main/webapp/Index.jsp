@@ -21,7 +21,7 @@
             int radio = Integer.parseInt(request.getParameter("radio"));
             out.println((4.0 / 3) * Math.PI * Math.pow(radio, 3));
         %>
-        <input type="hidden" name="numero"/><br>
+        <input type="hidden" name=""/><br>
         <input type="submit" value="Regresar" /><br><br>
         <%} else {%>
         <form> 
