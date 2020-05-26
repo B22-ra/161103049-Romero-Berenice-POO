@@ -30,7 +30,7 @@
             Ingresa el exponente: <input type="number" name="expo" required/><br>
             <input type="submit" value="Calcular" /><br><br>
         </form>
-        <h3>No has ingresado ningun numero.</h3>
+        
         <%}
         %>
     </body>

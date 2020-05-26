@@ -28,7 +28,7 @@
             Ingresa el volumen de la esfera: <input type="number" name="radio" required/><br>
             <input type="submit" value="Calcular" /><br><br>
         </form>
-        <h3>No has ingresado ningun numero.</h3>
+       
         <%}
         %>
     </body>
