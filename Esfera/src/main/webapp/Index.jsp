@@ -11,21 +11,21 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Volumen de una esfera</title>
     </head>
-    <body>
-        <h1>Calcula el volumen de una esfera.</h1>
+    <body style="background-color:powderblue;">
+        <h1 style="text-align:center; font-size:300%; color:pink;">Calcula el volumen de una esfera.</h1>
+        <p></p>
         <%
             if (request.getParameter("radio") != null) {
         %>
-        <h1>El volumen de la esfera es: </h1><br>
+        <h3>El volumen de la esfera es: </h3>
         <%
-            int radio = Integer.parseInt(request.getParameter("radio"));
-            out.println((4.0 / 3) * Math.PI * Math.pow(radio, 3));
+            double radio = Integer.parseInt(request.getParameter("radio"));
+            out.print((4.0 / 3) * Math.PI * Math.pow(radio, 3));
         %>
-        <input type="hidden" name=""/><br>
-        <input type="submit" value="Regresar" /><br><br>
+        <br><br><input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
         <%} else {%>
         <form> 
-            Ingresa el volumen de la esfera: <input type="number" name="radio" required/><br>
+            Ingresa el radio: <input type="number" name="radio" required min="0"/><br>
             <input type="submit" value="Calcular" /><br><br>
         </form>
        
