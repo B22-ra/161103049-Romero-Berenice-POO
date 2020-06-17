@@ -11,13 +11,13 @@ public class Conexion {
     private String url1="jdbc:mysql://localhost/libros";
     protected ResultSet rs;
     protected Statement st;
-    String msg="";
+    //String msg="";
     Connection conectar=null;
     public Connection Conectarjspmysql(){
         try{
             Class.forName(url);
             conectar=DriverManager.getConnection(url1,usuario,pass);
-           // msg="La Conexion fue exitosa";
+            //msg="La Conexion fue exitosa";
     }catch(Exception e){
         e.printStackTrace();
         //msg="Error en la conexion";

@@ -39,7 +39,7 @@
         <%
             Controlador ct = new Controlador();
             ResultSet rs;
-            rs = ct.DevolverRegistro("select *from Libro");
+            rs = ct.DevolverRegistro("select *from libro");
         %>
         <h1 style="text-align:center; font-family:impact; color: Lightgrey;">CRUD de Libros.</h1>
         <form>
@@ -54,7 +54,7 @@
                     <th>Precio</th>
                 </tr>
                 <%
-                    while(rs.next()){
+                    while (rs.next()) {
                 %>
                 <tr>
                     <td><%=rs.getInt(1)%></td>
