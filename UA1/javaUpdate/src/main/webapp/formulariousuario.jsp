@@ -49,7 +49,7 @@
                     </div>
                     <%}%>
                     <div class="col">
-                        <input class="form-control" type="text" value="<%=phone%>" placeholder="Número a 10 digitos." name="phone" id="phone"  min=10 max="10" required/>
+                        <input class="form-control" type="tel" value="<%=phone%>" placeholder="Número a 10 digitos." name="phone" id="phone" required/>
                     </div>
                     <div class="col">
                         <input class="btn btn-success btn-block" type="submit" value="Enviar"/>
